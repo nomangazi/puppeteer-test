@@ -11,7 +11,7 @@ const puppeteer = require("puppeteer");
 
   await page.goto("https://www.google.com");
   await page.click("textarea.gLFyf");
-  await page.type("textarea.gLFyf", "puppeteer");
+  await page.type("textarea.gLFyf", "Noman Gazi");
   await page.keyboard.press("Enter");
 
   await page.waitForSelector(".g");
@@ -19,8 +19,8 @@ const puppeteer = require("puppeteer");
     let linkAr = [];
     const anchors = Array.from(document.querySelectorAll(".g"));
     anchors.forEach((item) => {
-      const title = item.querySelector("h3").textContent;
-      const url = item.querySelector("a").href;
+      const title = item.querySelector("h3")?.textContent;
+      const url = item.querySelector("a")?.href;
       linkAr.push({ title, url });
     });
     return linkAr;
