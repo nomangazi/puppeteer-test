@@ -1,0 +1,22 @@
+{
+  "name": "puppeteer-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/nomangazi/puppeteer-test.git"
+  },
+  "author": "Noman Gazi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nomangazi/puppeteer-test/issues"
+  },
+  "homepage": "https://github.com/nomangazi/puppeteer-test#readme",
+  "dependencies": {
+    "puppeteer": "^22.10.0"
+  }
+}
